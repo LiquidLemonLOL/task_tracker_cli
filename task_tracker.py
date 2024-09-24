@@ -119,22 +119,6 @@ def update_task_desc():
                     json.dump(data, file, indent=4)
                 print(f'Task description on id {args.pick} has been updated to "{args.update}"')
 
-""" def delete_task():
-with open(file_path, 'r') as file:
-        data = json.load(file)
-
-        remove_task = False
-        for task in data:
-            if task['id'] == int(args.delete):
-                data.remove(remove_task)
-                remove_task = True
-                break
-        
-        if remove_task:
-            with open(file_path, 'w') as file:
-                json.dump(data, file, indent=4)
-            print(f'Task with id {args.pick} has been deleted.') """
-
 
 def delete_task():
     with open(file_path, 'r') as file:
