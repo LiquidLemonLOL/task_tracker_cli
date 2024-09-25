@@ -155,6 +155,6 @@ elif args.pick:
     elif args.mark:
         update_task_mark()
     else:
-        parser.error('Specify either --update, --mark or --delete')
+        parser.error('Specify either --update or --mark')
 
 exit()
